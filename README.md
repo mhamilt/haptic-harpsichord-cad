@@ -1,5 +1,5 @@
 # Haptic Harpsichord CAD
-Repository of CAD project files  for the Haptic Harpsichord
+Repository of CAD project files for the [Haptic Harpsichord](https://github.com/mhamilt/harpsichord-jack-tracking)
 
 
 
