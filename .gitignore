@@ -10,3 +10,6 @@ application.macosx
 out
 *.b#*
 *.s#*
+CAMOutputs.zip
+CAMOutputs/
+*.cam
