@@ -5618,18 +5618,6 @@ Source: DCJ0202.pdf</description>
 <label x="30.48" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="RAW"/>
-<wire x1="38.1" y1="38.1" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
-<label x="-7.62" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
-<label x="17.78" y="22.86" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -5763,6 +5751,16 @@ Source: DCJ0202.pdf</description>
 <wire x1="20.32" y1="-10.16" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
 <label x="22.86" y="-10.16" size="1.778" layer="95" xref="yes"/>
 <pinref part="FACEBOARD" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="RAW"/>
+<wire x1="38.1" y1="38.1" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
+<label x="-7.62" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
+<label x="17.78" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3V" class="0">
