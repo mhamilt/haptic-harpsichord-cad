@@ -5793,13 +5793,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="D1" gate="G$1" pin="DOUT"/>
 </segment>
 </net>
-<net name="LEDDOUT" class="0">
+<net name="DOUT" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="DOUT"/>
 <pinref part="SV2" gate="1" pin="7"/>
 <wire x1="136.398" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="119.38" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
+<label x="139.446" y="108.712" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="3V" class="0">
@@ -5877,13 +5878,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="D5" gate="G$1" pin="DIN"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="DIN" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="DIN"/>
 <pinref part="SV3" gate="1" pin="7"/>
 <wire x1="2.54" y1="104.14" x2="-7.62" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="104.14" x2="-7.62" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="119.38" x2="-5.842" y2="119.38" width="0.1524" layer="91"/>
+<label x="-7.874" y="109.22" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VCC" class="0">
