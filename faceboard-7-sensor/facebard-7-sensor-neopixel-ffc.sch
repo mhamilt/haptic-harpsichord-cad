@@ -5815,6 +5815,7 @@ Junction</text>
 <wire x1="55.88" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="99.06" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
+<label x="53.848" y="96.774" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A" class="0">
