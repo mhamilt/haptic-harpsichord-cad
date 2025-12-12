@@ -4962,19 +4962,19 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 </classes>
 <parts>
 <part name="Q1" library="qre1113" deviceset="QRE1113" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="Q2" library="qre1113" deviceset="QRE1113" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="Q3" library="qre1113" deviceset="QRE1113" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="Q4" library="qre1113" deviceset="QRE1113" device=""/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="Q5" library="qre1113" deviceset="QRE1113" device=""/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="Q6" library="qre1113" deviceset="QRE1113" device=""/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="Q7" library="qre1113" deviceset="QRE1113" device=""/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="686114148922" deviceset="686114148922" device=""/>
@@ -5040,7 +5040,7 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <attribute name="VALUE" x="134.62" y="73.66" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="J1" gate="G$1" x="73.66" y="129.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="73.66" y="133.35" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="NAME" x="81.28" y="107.95" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="78.74" y="107.95" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
 </instances>
@@ -5061,9 +5061,9 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <label x="5.08" y="65.532" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="9"/>
-<wire x1="53.34" y1="104.14" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
-<label x="53.34" y="101.6" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="40.64" y="101.6" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="14"/>
+<wire x1="40.64" y1="101.6" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5126,10 +5126,18 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <wire x1="129.54" y1="76.2" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
 <junction x="129.54" y="81.28"/>
 <junction x="134.62" y="81.28"/>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="88.9" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="104.14" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="129.54" x2="78.74" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="129.54" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
+<junction x="78.74" y="88.9"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="MP1"/>
+<junction x="73.66" y="129.54"/>
+<pinref part="J1" gate="G$1" pin="MP2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5146,9 +5154,9 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <label x="27.94" y="65.532" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="8"/>
-<wire x1="55.88" y1="104.14" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
-<label x="55.88" y="96.52" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="43.18" y="96.52" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="13"/>
+<wire x1="43.18" y1="96.52" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5165,9 +5173,9 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <label x="48.26" y="65.532" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="58.42" y1="104.14" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
-<label x="58.42" y="101.6" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="45.72" y="101.6" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="12"/>
+<wire x1="45.72" y1="101.6" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5184,9 +5192,9 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <label x="68.58" y="65.532" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="60.96" y1="104.14" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 <label x="60.96" y="96.52" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="C4" class="0">
@@ -5196,9 +5204,9 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <label x="88.9" y="65.532" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="63.5" y1="104.14" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
 <label x="63.5" y="101.6" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -5215,9 +5223,9 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <label x="109.22" y="65.532" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="66.04" y1="104.14" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <label x="66.04" y="96.52" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -5234,9 +5242,9 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <label x="129.54" y="65.532" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="68.58" y1="104.14" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
 <label x="68.58" y="101.6" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -5244,13 +5252,6 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <pinref part="Q5" gate="A" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="71.12" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="MP2"/>
-<pinref part="J1" gate="G$1" pin="MP1"/>
-<wire x1="71.12" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5277,17 +5278,20 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <junction x="12.7" y="60.96"/>
 <wire x1="139.7" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
 <junction x="114.3" y="60.96"/>
-<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="104.14" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="83.82" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="83.82" x2="-15.24" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="60.96" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-10.16" y="60.96"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,60.4622,116.84,J1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
