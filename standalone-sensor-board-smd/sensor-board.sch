@@ -78,11 +78,7 @@
 <libraries>
 <library name="qre1113">
 <packages>
-<package name="DIP4_100AQ_ONS">
-<pad name="4" x="0" y="1.8034" drill="0.8636" diameter="1.3716"/>
-<pad name="1" x="0" y="0" drill="0.8636" diameter="1.3716"/>
-<pad name="2" x="3.81" y="0" drill="0.8636" diameter="1.3716"/>
-<pad name="3" x="3.81" y="1.8034" drill="0.8636" diameter="1.3716"/>
+<package name="DIP4_100AQ_ONS_SMD">
 <wire x1="0" y1="1.8034" x2="-2.54" y2="1.8034" width="0.1524" layer="47"/>
 <wire x1="-2.54" y1="1.8034" x2="-2.921" y2="1.8034" width="0.1524" layer="47"/>
 <wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="47"/>
@@ -166,6 +162,10 @@
 <text x="0.2032" y="-0.635" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-1.3716" y="0.254" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 <text x="0.1778" y="0.254" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+<smd name="4" x="0" y="1.778" dx="1.27" dy="0.635" layer="1"/>
+<smd name="1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
+<smd name="2" x="3.81" y="0" dx="1.27" dy="0.635" layer="1"/>
+<smd name="3" x="3.81" y="1.778" dx="1.27" dy="0.635" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -218,12 +218,12 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="QRE1113" prefix="Q">
+<deviceset name="QRE1113GR" prefix="Q">
 <gates>
 <gate name="A" symbol="OPTOCOUPLER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIP4_100AQ_ONS">
+<device name="" package="DIP4_100AQ_ONS_SMD">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
@@ -4961,19 +4961,19 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 </class>
 </classes>
 <parts>
-<part name="Q1" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="Q1" library="qre1113" deviceset="QRE1113GR" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q2" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="Q2" library="qre1113" deviceset="QRE1113GR" device=""/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q3" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="Q3" library="qre1113" deviceset="QRE1113GR" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q4" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="Q4" library="qre1113" deviceset="QRE1113GR" device=""/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q5" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="Q5" library="qre1113" deviceset="QRE1113GR" device=""/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q6" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="Q6" library="qre1113" deviceset="QRE1113GR" device=""/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q7" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="Q7" library="qre1113" deviceset="QRE1113GR" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
