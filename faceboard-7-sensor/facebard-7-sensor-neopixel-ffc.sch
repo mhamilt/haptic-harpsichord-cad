@@ -5441,7 +5441,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <sheets>
 <sheet>
 <plain>
-<text x="41.656" y="109.22" size="1.778" layer="91">Soulder
+<text x="41.656" y="109.22" size="1.778" layer="91">Solder
 Junction</text>
 </plain>
 <instances>
@@ -5553,7 +5553,7 @@ Junction</text>
 <attribute name="VALUE" x="58.928" y="101.6" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U1" gate="A" x="68.58" y="109.22" smashed="yes">
-<attribute name="VALUE" x="60.4774" y="82.7786" size="2.0828" layer="96" ratio="6" rot="SMR0"/>
+<attribute name="VALUE" x="90.9574" y="82.7786" size="2.0828" layer="96" ratio="6" rot="SMR0"/>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="71.12" y="139.7" smashed="yes">
 <attribute name="VALUE" x="69.723" y="142.621" size="1.778" layer="96"/>

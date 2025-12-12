@@ -5359,7 +5359,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="-11.7094" y="67.5132" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
 <instance part="R1" gate="G$1" x="-17.78" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-16.5354" y="64.516" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="-16.7894" y="64.516" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="-21.082" y="64.262" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R2" gate="G$1" x="-2.54" y="66.04" smashed="yes" rot="MR270">
@@ -5370,7 +5370,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="13.9446" y="67.5132" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
 <instance part="R3" gate="G$1" x="7.62" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="9.1186" y="64.516" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="8.8646" y="64.516" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="4.572" y="64.262" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R4" gate="G$1" x="22.86" y="66.04" smashed="yes" rot="MR270">
@@ -5382,7 +5382,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </instance>
 <instance part="R5" gate="G$1" x="33.02" y="66.04" smashed="yes" rot="MR90">
 <attribute name="NAME" x="34.5186" y="64.262" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="29.718" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<attribute name="VALUE" x="29.972" y="63.754" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R6" gate="G$1" x="48.26" y="66.04" smashed="yes" rot="MR270">
 <attribute name="NAME" x="47.0154" y="67.564" size="1.778" layer="95" rot="MR270"/>
@@ -5392,7 +5392,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="64.2366" y="67.5132" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
 <instance part="R7" gate="G$1" x="58.42" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="59.9186" y="64.262" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="59.6646" y="64.77" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="55.118" y="64.262" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R8" gate="G$1" x="73.66" y="66.04" smashed="yes" rot="MR270">
@@ -5407,18 +5407,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="VALUE" x="80.772" y="64.008" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R10" gate="G$1" x="99.06" y="66.04" smashed="yes" rot="MR270">
-<attribute name="NAME" x="97.8154" y="68.58" size="1.778" layer="95" rot="MR270"/>
+<attribute name="NAME" x="97.8154" y="68.072" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="102.362" y="68.58" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="Q6" gate="A" x="104.14" y="68.58" smashed="yes" rot="MR180">
 <attribute name="NAME" x="115.5446" y="67.5132" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
 <instance part="R11" gate="G$1" x="109.22" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="110.4646" y="64.262" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="110.4646" y="64.008" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="105.918" y="64.008" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R12" gate="G$1" x="124.46" y="66.04" smashed="yes" rot="MR270">
-<attribute name="NAME" x="123.2154" y="68.58" size="1.778" layer="95" rot="MR270"/>
+<attribute name="NAME" x="123.2154" y="68.326" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="127.762" y="68.58" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="Q7" gate="A" x="129.54" y="68.58" smashed="yes" rot="MR180">
@@ -5429,7 +5429,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="VALUE" x="131.318" y="64.008" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R14" gate="G$1" x="149.86" y="66.04" smashed="yes" rot="MR270">
-<attribute name="NAME" x="148.6154" y="68.58" size="1.778" layer="95" rot="MR270"/>
+<attribute name="NAME" x="148.6154" y="68.326" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="153.162" y="68.58" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="SV2" gate="1" x="121.92" y="96.52" smashed="yes">
@@ -5729,13 +5729,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="132.08" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="5V" class="0">
-<segment>
-<wire x1="78.74" y1="105.918" x2="84.328" y2="105.918" width="0.1524" layer="91"/>
-<label x="84.328" y="105.918" size="1.778" layer="95" xref="yes"/>
-<pinref part="U1" gate="A" pin="VDD"/>
-</segment>
-</net>
 <net name="A" class="0">
 <segment>
 <pinref part="SV2" gate="1" pin="4"/>
@@ -5942,6 +5935,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="134.62" y="60.96"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <junction x="149.86" y="60.96"/>
+</segment>
+<segment>
+<wire x1="78.74" y1="105.918" x2="84.328" y2="105.918" width="0.1524" layer="91"/>
+<label x="84.328" y="105.918" size="1.778" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="VDD"/>
 </segment>
 </net>
 <net name="N$15" class="0">
