@@ -1,0 +1,376 @@
+# Created by Ultra Librarian 8.3.350 Copyright © 1999-2024
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'CONN_1-1734592-4_TYCO.pac';
+Grid Mil;
+Layer 1;
+Smd '1' 12 43 -0 R0 (0 0);
+Layer 1;
+Smd '2' 12 43 -0 R0 (19.6851 0);
+Layer 1;
+Smd '3' 12 43 -0 R0 (39.3701 0);
+Layer 1;
+Smd '4' 12 43 -0 R0 (59.0552 0);
+Layer 1;
+Smd '5' 12 43 -0 R0 (78.7402 0);
+Layer 1;
+Smd '6' 12 43 -0 R0 (98.4252 0);
+Layer 1;
+Smd '7' 12 43 -0 R0 (118.1103 0);
+Layer 1;
+Smd '8' 12 43 -0 R0 (137.7953 0);
+Layer 1;
+Smd '9' 12 43 -0 R0 (157.4804 0);
+Layer 1;
+Smd '10' 12 43 -0 R0 (177.1654 0);
+Layer 1;
+Smd '11' 12 43 -0 R0 (196.8504 0);
+Layer 1;
+Smd '12' 12 43 -0 R0 (216.5355 0);
+Layer 1;
+Smd '13' 12 43 -0 R0 (236.2205 0);
+Layer 1;
+Smd '14' 12 43 -0 R0 (255.9056 0);
+Layer 47;
+Wire 6 (0 0) (0 298);
+Wire 6 (20 0) (20 298);
+Wire 6 (0 283) (-50 283);
+Wire 6 (20 283) (70 283);
+Wire 6 (0 283) (-10 288);
+Wire 6 (0 283) (-10 278);
+Wire 6 (-10 288) (-10 278);
+Wire 6 (20 283) (30 288);
+Wire 6 (20 283) (30 278);
+Wire 6 (30 288) (30 278);
+Wire 6 (-117 183) (-117 598);
+Wire 6 (372 183) (372 598);
+Wire 6 (-117 583) (372 583);
+Wire 6 (-117 583) (-107 588);
+Wire 6 (-117 583) (-107 578);
+Wire 6 (-107 588) (-107 578);
+Wire 6 (372 583) (362 588);
+Wire 6 (372 583) (362 578);
+Wire 6 (362 588) (362 578);
+Wire 6 (0 0) (487 0);
+Wire 6 (0 0) (487 0);
+Wire 6 (472 0) (472 50);
+Wire 6 (472 0) (472 -50);
+Wire 6 (472 0) (467 10);
+Wire 6 (472 0) (477 10);
+Wire 6 (467 10) (477 10);
+Wire 6 (472 0) (467 -10);
+Wire 6 (472 0) (477 -10);
+Wire 6 (467 -10) (477 -10);
+Wire 6 (-117 173) (-432 173);
+Wire 6 (128 0) (-432 0);
+Wire 6 (-417 173) (-417 0);
+Wire 6 (-417 173) (-422 163);
+Wire 6 (-417 173) (-412 163);
+Wire 6 (-422 163) (-412 163);
+Wire 6 (-417 0) (-422 10);
+Wire 6 (-417 0) (-412 10);
+Wire 6 (-422 10) (-412 10);
+Wire 6 (-117 173) (-532 173);
+Wire 6 (-117 0) (-532 0);
+Wire 6 (-517 173) (-517 0);
+Wire 6 (-517 173) (-522 163);
+Wire 6 (-517 173) (-512 163);
+Wire 6 (-522 163) (-512 163);
+Wire 6 (-517 0) (-522 10);
+Wire 6 (-517 0) (-512 10);
+Wire 6 (-522 10) (-512 10);
+Change Size 50;
+Change Ratio 6;
+Text 'Default Padstyle: RX12Y43D0T' SR0 (-471 -182);
+Change Size 50;
+Change Ratio 6;
+Text '1st Mtg Padstyle: EX80Y80D50P' SR0 (-501 -256);
+Change Size 50;
+Change Ratio 6;
+Text '2nd Mtg Padstyle: EX70Y70D70P' SR0 (-508 -332);
+Change Size 50;
+Change Ratio 6;
+Text '3rd Mtg Padstyle: EX70Y70D70P' SR0 (-508 -406);
+Change Size 50;
+Change Ratio 6;
+Text 'Left Mtg Padstyle: EX60Y60D30P' SR0 (-516 -482);
+Change Size 50;
+Change Ratio 6;
+Text 'Right Mtg Padstyle: EX60Y60D30P' SR0 (-539 -556);
+Change Size 50;
+Change Ratio 6;
+Text 'Alt Padstyle 1: OX60Y90D30P' SR0 (-455 -632);
+Change Size 50;
+Change Ratio 6;
+Text 'Alt Padstyle 2: OX90Y60D30P' SR0 (-455 -706);
+Change Size 25;
+Change Ratio 4;
+Text '0.02in/0.5mm' SR0 (-115 303);
+Change Size 25;
+Change Ratio 4;
+Text '0.489in/12.421mm' SR0 (-43 603);
+Change Size 25;
+Change Ratio 4;
+Text '0in/0mm' SR0 (492 -12);
+Change Size 25;
+Change Ratio 4;
+Text '0.173in/4.394mm' SR0 (-755 74);
+Change Size 25;
+Change Ratio 4;
+Text '0.173in/4.394mm' SR0 (-855 74);
+Layer 21;
+Wire 6 (-122 -5) (-19 -5);
+Wire 6 (377 -5) (377 178);
+Wire 6 (377 178) (-122 178);
+Wire 6 (-122 178) (-122 -5);
+Wire 6 (275 -5) (377 -5);
+Wire 20 (15 -75) -180 (-15 -75);
+Wire 20 (-15 -75) -180 (15 -75);
+Change Size 50;
+Change Ratio 6;
+Text '1' SR0 (-35 -25);
+Change Size 50;
+Change Ratio 6;
+Text '1' SR0 (-35 -25);
+Change Size 50;
+Change Ratio 6;
+Text '14' SR0 (223 -25);
+Change Size 50;
+Change Ratio 6;
+Text '14' SR0 (223 -25);
+Layer 51;
+Wire 6 (-117 0) (372 0);
+Wire 6 (372 0) (372 173);
+Wire 6 (372 173) (-117 173);
+Wire 6 (-117 173) (-117 0);
+Wire 20 (15 -75) -180 (-15 -75);
+Wire 20 (-15 -75) -180 (15 -75);
+Change Size 50;
+Change Ratio 6;
+Text '1' SR0 (-35 -25);
+Change Size 50;
+Change Ratio 6;
+Text '1' SR0 (-35 -25);
+Change Size 50;
+Change Ratio 6;
+Text '14' SR0 (223 -25);
+Change Size 50;
+Change Ratio 6;
+Text '14' SR0 (223 -25);
+Layer 22;
+Wire 20 (15 -75) -180 (-15 -75);
+Wire 20 (-15 -75) -180 (15 -75);
+Change Size 50;
+Change Ratio 6;
+Text '1' SMR0 (11 -25);
+Change Size 50;
+Change Ratio 6;
+Text '1' SMR0 (11 -25);
+Change Size 50;
+Change Ratio 6;
+Text '14' SMR0 (313 -25);
+Change Size 50;
+Change Ratio 6;
+Text '14' SMR0 (313 -25);
+Layer 27;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-1 -25);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (60 -25);
+Layer 25;
+
+Edit 'CONN_1-1734592-4_TYCO.sym';
+Grid Mil;
+Layer 94;
+Pin '1' Pas None Middle R0 Pad 0 (0 0)
+Pin '2' Pas None Middle R0 Pad 0 (0 -100)
+Pin '3' Pas None Middle R0 Pad 0 (0 -200)
+Pin '4' Pas None Middle R0 Pad 0 (0 -300)
+Pin '5' Pas None Middle R0 Pad 0 (0 -400)
+Pin '6' Pas None Middle R0 Pad 0 (0 -500)
+Pin '7' Pas None Middle R0 Pad 0 (0 -600)
+Pin '8' Pas None Middle R0 Pad 0 (0 -700)
+Pin '9' Pas None Middle R0 Pad 0 (0 -800)
+Pin '10' Pas None Middle R0 Pad 0 (0 -900)
+Pin '11' Pas None Middle R0 Pad 0 (0 -1000)
+Pin '12' Pas None Middle R0 Pad 0 (0 -1100)
+Pin '13' Pas None Middle R0 Pad 0 (0 -1200)
+Pin '14' Pas None Middle R0 Pad 0 (0 -1300)
+Wire 6 (400 0) (200 0);
+Wire 6 (400 -100) (200 -100);
+Wire 6 (400 -200) (200 -200);
+Wire 6 (400 -300) (200 -300);
+Wire 6 (400 -400) (200 -400);
+Wire 6 (400 -500) (200 -500);
+Wire 6 (400 -600) (200 -600);
+Wire 6 (400 -700) (200 -700);
+Wire 6 (400 -800) (200 -800);
+Wire 6 (400 -900) (200 -900);
+Wire 6 (400 -1000) (200 -1000);
+Wire 6 (400 -1100) (200 -1100);
+Wire 6 (400 -1200) (200 -1200);
+Wire 6 (400 -1300) (200 -1300);
+Wire 6 (400 0) (350 33);
+Wire 6 (400 -100) (350 -67);
+Wire 6 (400 -200) (350 -167);
+Wire 6 (400 -300) (350 -267);
+Wire 6 (400 -400) (350 -367);
+Wire 6 (400 -500) (350 -467);
+Wire 6 (400 -600) (350 -567);
+Wire 6 (400 -700) (350 -667);
+Wire 6 (400 -800) (350 -767);
+Wire 6 (400 -900) (350 -867);
+Wire 6 (400 -1000) (350 -967);
+Wire 6 (400 -1100) (350 -1067);
+Wire 6 (400 -1200) (350 -1167);
+Wire 6 (400 -1300) (350 -1267);
+Wire 6 (400 0) (350 -33);
+Wire 6 (400 -100) (350 -133);
+Wire 6 (400 -200) (350 -233);
+Wire 6 (400 -300) (350 -333);
+Wire 6 (400 -400) (350 -433);
+Wire 6 (400 -500) (350 -533);
+Wire 6 (400 -600) (350 -633);
+Wire 6 (400 -700) (350 -733);
+Wire 6 (400 -800) (350 -833);
+Wire 6 (400 -900) (350 -933);
+Wire 6 (400 -1000) (350 -1033);
+Wire 6 (400 -1100) (350 -1133);
+Wire 6 (400 -1200) (350 -1233);
+Wire 6 (400 -1300) (350 -1333);
+Wire 6 (200 100) (200 -1400);
+Wire 6 (200 -1400) (500 -1400);
+Wire 6 (500 -1400) (500 100);
+Wire 6 (500 100) (200 100);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (164 209);
+
+Edit 'CONN_1-1734592-4_TYCO_2.sym';
+Grid Mil;
+Layer 94;
+Pin '1' Pas None Middle R0 Pad 0 (0 0)
+Pin '2' Pas None Middle R0 Pad 0 (0 -100)
+Pin '3' Pas None Middle R0 Pad 0 (0 -200)
+Pin '4' Pas None Middle R0 Pad 0 (0 -300)
+Pin '5' Pas None Middle R0 Pad 0 (0 -400)
+Pin '6' Pas None Middle R0 Pad 0 (0 -500)
+Pin '7' Pas None Middle R0 Pad 0 (0 -600)
+Pin '8' Pas None Middle R0 Pad 0 (0 -700)
+Pin '9' Pas None Middle R0 Pad 0 (0 -800)
+Pin '10' Pas None Middle R0 Pad 0 (0 -900)
+Pin '11' Pas None Middle R0 Pad 0 (0 -1000)
+Pin '12' Pas None Middle R0 Pad 0 (0 -1100)
+Pin '13' Pas None Middle R0 Pad 0 (0 -1200)
+Pin '14' Pas None Middle R0 Pad 0 (0 -1300)
+Wire 6 (300 0) (200 0);
+Wire 6 (300 -100) (200 -100);
+Wire 6 (300 -200) (200 -200);
+Wire 6 (300 -300) (200 -300);
+Wire 6 (300 -400) (200 -400);
+Wire 6 (300 -500) (200 -500);
+Wire 6 (300 -600) (200 -600);
+Wire 6 (300 -700) (200 -700);
+Wire 6 (300 -800) (200 -800);
+Wire 6 (300 -900) (200 -900);
+Wire 6 (300 -1000) (200 -1000);
+Wire 6 (300 -1100) (200 -1100);
+Wire 6 (300 -1200) (200 -1200);
+Wire 6 (300 -1300) (200 -1300);
+Wire 6 (300 0) (350 33);
+Wire 6 (300 -100) (350 -67);
+Wire 6 (300 -200) (350 -167);
+Wire 6 (300 -300) (350 -267);
+Wire 6 (300 -400) (350 -367);
+Wire 6 (300 -500) (350 -467);
+Wire 6 (300 -600) (350 -567);
+Wire 6 (300 -700) (350 -667);
+Wire 6 (300 -800) (350 -767);
+Wire 6 (300 -900) (350 -867);
+Wire 6 (300 -1000) (350 -967);
+Wire 6 (300 -1100) (350 -1067);
+Wire 6 (300 -1200) (350 -1167);
+Wire 6 (300 -1300) (350 -1267);
+Wire 6 (300 0) (350 -33);
+Wire 6 (300 -100) (350 -133);
+Wire 6 (300 -200) (350 -233);
+Wire 6 (300 -300) (350 -333);
+Wire 6 (300 -400) (350 -433);
+Wire 6 (300 -500) (350 -533);
+Wire 6 (300 -600) (350 -633);
+Wire 6 (300 -700) (350 -733);
+Wire 6 (300 -800) (350 -833);
+Wire 6 (300 -900) (350 -933);
+Wire 6 (300 -1000) (350 -1033);
+Wire 6 (300 -1100) (350 -1133);
+Wire 6 (300 -1200) (350 -1233);
+Wire 6 (300 -1300) (350 -1333);
+Wire 6 (200 100) (200 -1400);
+Wire 6 (200 -1400) (500 -1400);
+Wire 6 (500 -1400) (500 100);
+Wire 6 (500 100) (200 100);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (164 209);
+
+Edit 'CONN_1-1734592-4_TYCO_3.sym';
+Grid Mil;
+Layer 94;
+Pin '1' Pas None Middle R0 Pad 0 (0 0)
+Pin '2' Pas None Middle R0 Pad 0 (0 -100)
+Pin '3' Pas None Middle R0 Pad 0 (0 -200)
+Pin '4' Pas None Middle R0 Pad 0 (0 -300)
+Pin '5' Pas None Middle R0 Pad 0 (0 -400)
+Pin '6' Pas None Middle R0 Pad 0 (0 -500)
+Pin '7' Pas None Middle R0 Pad 0 (0 -600)
+Pin '8' Pas None Middle R0 Pad 0 (0 -700)
+Pin '9' Pas None Middle R0 Pad 0 (0 -800)
+Pin '10' Pas None Middle R0 Pad 0 (0 -900)
+Pin '11' Pas None Middle R0 Pad 0 (0 -1000)
+Pin '12' Pas None Middle R0 Pad 0 (0 -1100)
+Pin '13' Pas None Middle R0 Pad 0 (0 -1200)
+Pin '14' Pas None Middle R0 Pad 0 (0 -1300)
+Wire 6 (200 100) (200 -1400);
+Wire 6 (200 -1400) (500 -1400);
+Wire 6 (500 -1400) (500 100);
+Wire 6 (500 100) (200 100);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (164 209);
+
+Edit '1-1734592-4.dev';
+Prefix 'J';
+Description '';
+Value Off;
+Add CONN_1-1734592-4_TYCO 'A' Next  0 (0 0);
+Package 'CONN_1-1734592-4_TYCO';
+Technology '';
+Attribute Copyright 'Copyright (C) 2024 Ultra Librarian. All rights reserved.';
+Attribute Mfr_Name 'TE Connectivity';
+Attribute Manufacturer_Part_Number '1-1734592-4';
+Connect 'A.1' '1';
+Connect 'A.2' '2';
+Connect 'A.3' '3';
+Connect 'A.4' '4';
+Connect 'A.5' '5';
+Connect 'A.6' '6';
+Connect 'A.7' '7';
+Connect 'A.8' '8';
+Connect 'A.9' '9';
+Connect 'A.10' '10';
+Connect 'A.11' '11';
+Connect 'A.12' '12';
+Connect 'A.13' '13';
+Connect 'A.14' '14';

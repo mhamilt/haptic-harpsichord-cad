@@ -13,3 +13,4 @@ out
 CAMOutputs.zip
 CAMOutputs/
 *.cam
+*.l#*
