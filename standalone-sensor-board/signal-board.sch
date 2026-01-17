@@ -5271,6 +5271,13 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <part name="J1" library="686114148922" deviceset="686114148922" device=""/>
 <part name="J3" library="686114148922" deviceset="686114148922" device=""/>
 <part name="J4" library="686114148922" deviceset="686114148922" device=""/>
+<part name="RDV1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k"/>
+<part name="RDV2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k"/>
+<part name="RDV3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k"/>
+<part name="RDV4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k"/>
+<part name="RDV5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k"/>
+<part name="RDV6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k"/>
+<part name="RDV7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -5351,6 +5358,34 @@ Junction</text>
 <instance part="J4" gate="G$1" x="-55.88" y="88.9" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-34.29" y="81.28" size="1.778" layer="95" rot="MR180" align="center-left"/>
 <attribute name="VALUE" x="-34.29" y="83.82" size="1.778" layer="96" rot="MR180" align="center-left"/>
+</instance>
+<instance part="RDV1" gate="G$1" x="5.08" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.62" y="36.8554" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="41.148" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="RDV2" gate="G$1" x="5.08" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.62" y="34.3154" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="38.608" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="RDV3" gate="G$1" x="5.08" y="33.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.62" y="31.7754" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="36.068" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="RDV4" gate="G$1" x="5.08" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.62" y="29.2354" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="33.528" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="RDV5" gate="G$1" x="5.08" y="27.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.62" y="26.6954" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="30.988" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="RDV6" gate="G$1" x="5.08" y="25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.62" y="24.1554" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="28.448" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="RDV7" gate="G$1" x="5.08" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.62" y="21.6154" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="25.908" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
