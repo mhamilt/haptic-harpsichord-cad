@@ -67,14 +67,27 @@ for index, point in enumerate([(x * rpitch) + resitor100_oy for x in range(0,16)
     print(f"move R{((index+1)*2)+1} ({resitor100_ox} {point});")
     print(f"move R{((index+1)+1)*2} ({resitor10k_ox} {point});")
 
-led_ox = 33 # min distance from board edge in x axis
-led_oy = 9 # min distance from board edge in y axis
-led_pitch = 12.0
+led_ox = 23.08 # min distance from board edge in x axis
+# led_oy = 4.4 # min distance from board edge in y axis
+# led_pitch = 12.0
+led_pitch = 17.73 - 3.71
+led_oy = 3.71 + (qrepitch/2) # min distance from board edge in y axis
 
 for index, point in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):
   print(f"rotate D{(index+1)} 270;")
   print(f"move D{(7-index)} ({led_ox} {point});")
   print(f"mirror D{(index+1)};")
+
+for i, p in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):
+  print(f"ROTATE =R90 LED{i+1};")
+
+for index, point in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):  
+  print(f"move LED{(index+1)} ({led_ox} {point});")
+
+for index, point in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):  
+  print(f"mirror LED{(index+1)};")
+
+
 
 # Ideal LED placement
 for index, point in enumerate([(x * pitch) + ox for x in range(0,7)]):
