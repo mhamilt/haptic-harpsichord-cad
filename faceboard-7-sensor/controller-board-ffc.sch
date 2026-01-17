@@ -5302,7 +5302,7 @@ Source: DCJ0202.pdf</description>
 <part name="ROTARY" library="con-jst-ph" deviceset="B5B-PH-K" device=""/>
 <part name="LEDR" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="300"/>
 <part name="FRAM" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA08-1" device="" package3d_urn="urn:adsk.eagle:package:8343/1" value="MB85RS2MTA"/>
-<part name="RIBBON1" library="686114148922" deviceset="686114148922" device=""/>
+<part name="RIBBON1" library="686114148922" deviceset="686114148922" device="" value="Signal"/>
 <part name="J1" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0202" device="" package3d_urn="urn:adsk.eagle:package:7491/1"/>
 <part name="RESET" library="con-jst-ph" deviceset="B2B-PH-K" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -5345,6 +5345,7 @@ Source: DCJ0202.pdf</description>
 <pinref part="U$1" gate="G$1" pin="A5"/>
 <pinref part="RIBBON1" gate="G$1" pin="13"/>
 <wire x1="38.1" y1="53.34" x2="17.018" y2="53.34" width="0.1524" layer="91"/>
+<label x="22.86" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -5368,24 +5369,16 @@ Source: DCJ0202.pdf</description>
 <wire x1="17.018" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A0" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="A0"/>
-<wire x1="17.018" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="17.018" y1="66.04" x2="17.272" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="RIBBON1" gate="G$1" pin="8"/>
-</segment>
-</net>
 <net name="A" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D6"/>
-<wire x1="71.374" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-<label x="75.438" y="58.42" size="1.778" layer="95" rot="MR0" xref="yes"/>
-</segment>
 <segment>
 <wire x1="17.018" y1="76.2" x2="17.272" y2="76.2" width="0.1524" layer="91"/>
 <label x="17.272" y="76.2" size="1.778" layer="95" xref="yes"/>
 <pinref part="RIBBON1" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D8"/>
+<wire x1="71.12" y1="63.5" x2="71.628" y2="63.5" width="0.1524" layer="91"/>
+<label x="75.692" y="63.5" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="B" class="0">
@@ -5402,14 +5395,14 @@ Source: DCJ0202.pdf</description>
 </net>
 <net name="C" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D8"/>
-<wire x1="71.12" y1="63.5" x2="71.628" y2="63.5" width="0.1524" layer="91"/>
-<label x="75.692" y="63.5" size="1.778" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <wire x1="17.018" y1="71.12" x2="17.272" y2="71.12" width="0.1524" layer="91"/>
 <label x="17.272" y="71.12" size="1.778" layer="95" xref="yes"/>
 <pinref part="RIBBON1" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D6"/>
+<wire x1="71.374" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<label x="75.438" y="58.42" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -5446,11 +5439,6 @@ Source: DCJ0202.pdf</description>
 <label x="32.766" y="4.064" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="69.85" y1="9.906" x2="70.104" y2="9.906" width="0.1524" layer="91"/>
-<pinref part="FRAM" gate="1" pin="6"/>
-<label x="70.104" y="9.906" size="1.778" layer="95" rot="MR180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="RIBBON1" gate="G$1" pin="MP1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-8.382" y1="83.82" x2="-8.382" y2="81.28" width="0.1524" layer="91"/>
@@ -5465,6 +5453,12 @@ Source: DCJ0202.pdf</description>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="27.94" y1="43.18" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
 <junction x="27.94" y="40.64"/>
+<label x="33.02" y="40.64" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="FRAM" gate="1" pin="7"/>
+<wire x1="69.85" y1="7.366" x2="76.2" y2="7.366" width="0.1524" layer="91"/>
+<label x="76.454" y="7.366" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CS" class="0">
@@ -5605,18 +5599,28 @@ Source: DCJ0202.pdf</description>
 <wire x1="39.37" y1="20.32" x2="33.528" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="A4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A4"/>
 <pinref part="RIBBON1" gate="G$1" pin="12"/>
 <wire x1="38.1" y1="55.88" x2="17.018" y2="55.88" width="0.1524" layer="91"/>
+<label x="22.86" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="A6" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A6"/>
 <pinref part="RIBBON1" gate="G$1" pin="14"/>
 <wire x1="38.1" y1="50.8" x2="17.018" y2="50.8" width="0.1524" layer="91"/>
+<label x="22.86" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A0" class="0">
+<segment>
+<pinref part="RIBBON1" gate="G$1" pin="8"/>
+<pinref part="U$1" gate="G$1" pin="A0"/>
+<wire x1="17.018" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
+<label x="30.48" y="66.04" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
