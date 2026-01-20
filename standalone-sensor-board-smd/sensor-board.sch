@@ -78,7 +78,11 @@
 <libraries>
 <library name="qre1113">
 <packages>
-<package name="DIP4_100AQ_ONS_SMD">
+<package name="DIP4_100AQ_ONS">
+<pad name="4" x="0" y="1.8034" drill="0.8636" diameter="1.3716"/>
+<pad name="1" x="0" y="0" drill="0.8636" diameter="1.3716"/>
+<pad name="2" x="3.81" y="0" drill="0.8636" diameter="1.3716"/>
+<pad name="3" x="3.81" y="1.8034" drill="0.8636" diameter="1.3716"/>
 <wire x1="0" y1="1.8034" x2="-2.54" y2="1.8034" width="0.1524" layer="47"/>
 <wire x1="-2.54" y1="1.8034" x2="-2.921" y2="1.8034" width="0.1524" layer="47"/>
 <wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="47"/>
@@ -162,10 +166,6 @@
 <text x="0.2032" y="-0.635" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-1.3716" y="0.254" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 <text x="0.1778" y="0.254" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
-<smd name="4" x="0" y="1.778" dx="1.27" dy="0.635" layer="1"/>
-<smd name="1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
-<smd name="2" x="3.81" y="0" dx="1.27" dy="0.635" layer="1"/>
-<smd name="3" x="3.81" y="1.778" dx="1.27" dy="0.635" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -218,12 +218,12 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="QRE1113GR" prefix="Q">
+<deviceset name="QRE1113" prefix="Q">
 <gates>
 <gate name="A" symbol="OPTOCOUPLER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIP4_100AQ_ONS_SMD">
+<device name="" package="DIP4_100AQ_ONS">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
@@ -235,6 +235,189 @@
 <attribute name="COPYRIGHT" value="Copyright (C) 2024 Ultra Librarian. All rights reserved." constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="QRE1113" constant="no"/>
 <attribute name="MFR_NAME" value="onsemi" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply2" urn="urn:adsk.eagle:library:372">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC" urn="urn:adsk.eagle:symbol:26997/1" library_version="2">
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" urn="urn:adsk.eagle:component:27060/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="686114148922">
+<description>&lt;Wurth Elektronik WR-FPC 1mm Pitch 14 Way Horizontal SMT Female FPC Connector, ZIF Bottom Contact&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="686114148922">
+<description>&lt;b&gt;686114148922-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-6.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-5.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-4.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-3.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="-2.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="-1.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="-0.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="0.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="9" x="1.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="10" x="2.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="11" x="3.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="12" x="4.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="13" x="5.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="14" x="6.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="MP1" x="-8.8" y="0.3" dx="2" dy="1.8" layer="1"/>
+<smd name="MP2" x="8.8" y="0.3" dx="2" dy="1.8" layer="1"/>
+<text x="0" y="0.5" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0.5" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-9.3" y1="2.75" x2="9.3" y2="2.75" width="0.2" layer="51"/>
+<wire x1="9.3" y1="2.75" x2="9.3" y2="-3.05" width="0.2" layer="51"/>
+<wire x1="9.3" y1="-3.05" x2="-9.3" y2="-3.05" width="0.2" layer="51"/>
+<wire x1="-9.3" y1="-3.05" x2="-9.3" y2="2.75" width="0.2" layer="51"/>
+<wire x1="-10.8" y1="5.05" x2="10.8" y2="5.05" width="0.1" layer="51"/>
+<wire x1="10.8" y1="5.05" x2="10.8" y2="-4.05" width="0.1" layer="51"/>
+<wire x1="10.8" y1="-4.05" x2="-10.8" y2="-4.05" width="0.1" layer="51"/>
+<wire x1="-10.8" y1="-4.05" x2="-10.8" y2="5.05" width="0.1" layer="51"/>
+<wire x1="-9.3" y1="-1" x2="-9.3" y2="-3.05" width="0.1" layer="21"/>
+<wire x1="-9.3" y1="-3.05" x2="9.3" y2="-3.05" width="0.1" layer="21"/>
+<wire x1="9.3" y1="-3.05" x2="9.3" y2="-1" width="0.1" layer="21"/>
+<wire x1="-9.3" y1="1.6" x2="-9.3" y2="2.8" width="0.1" layer="21"/>
+<wire x1="-9.2" y1="2.75" x2="-7.2" y2="2.75" width="0.1" layer="21"/>
+<wire x1="-9.3" y1="2.75" x2="-9.2" y2="2.75" width="0.1" layer="21"/>
+<wire x1="7" y1="2.75" x2="9.3" y2="2.75" width="0.1" layer="21"/>
+<wire x1="9.3" y1="2.75" x2="9.3" y2="1.6" width="0.1" layer="21"/>
+<wire x1="-6.6" y1="4" x2="-6.6" y2="4" width="0.1" layer="21"/>
+<wire x1="-6.6" y1="4" x2="-6.5" y2="4" width="0.1" layer="21" curve="180"/>
+<wire x1="-6.5" y1="4" x2="-6.5" y2="4" width="0.1" layer="21"/>
+<wire x1="-6.5" y1="4" x2="-6.6" y2="4" width="0.1" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="686114148922">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-35.56" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-35.56" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="25.4" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="2" x="25.4" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="3" x="25.4" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="4" x="25.4" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="5" x="25.4" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="6" x="25.4" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="7" x="25.4" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="8" x="25.4" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="9" x="25.4" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="10" x="25.4" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="11" x="25.4" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="12" x="25.4" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="13" x="25.4" y="-30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="14" x="25.4" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="MP1" x="0" y="0" visible="off" length="middle"/>
+<pin name="MP2" x="0" y="-2.54" visible="off" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="686114148922" prefix="J" uservalue="yes">
+<description>&lt;b&gt;Wurth Elektronik WR-FPC 1mm Pitch 14 Way Horizontal SMT Female FPC Connector, ZIF Bottom Contact&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="686114148922" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="686114148922">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="MP1" pad="MP1"/>
+<connect gate="G$1" pin="MP2" pad="MP2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Wurth Elektronik WR-FPC 1mm Pitch 14 Way Horizontal SMT Female FPC Connector, ZIF Bottom Contact" constant="no"/>
+<attribute name="HEIGHT" value="2.3mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="686114148922" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="710-686114148922" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/686114148922?qs=a9WhcLg8qCz0mPj5zZqo5g%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1291,6 +1474,22 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/tr&gt;
 &lt;/table&gt;</description>
 <packages>
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="11">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
 <package name="R0402" urn="urn:adsk.eagle:footprint:23043/3" library_version="11">
 <description>&lt;b&gt;Chip RESISTOR 0402 EIA (1005 Metric)&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
@@ -1322,22 +1521,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="11">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
 <package name="R0805W" urn="urn:adsk.eagle:footprint:23046/1" library_version="11">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt; wave soldering&lt;p&gt;</description>
@@ -2852,6 +3035,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package>
 </packages>
 <packages3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="11">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0805"/>
+</packageinstances>
+</package3d>
 <package3d name="R0402" urn="urn:adsk.eagle:package:23547/3" type="model" library_version="11">
 <description>Chip RESISTOR 0402 EIA (1005 Metric)</description>
 <packageinstances>
@@ -2862,12 +3051,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <description>RESISTOR</description>
 <packageinstances>
 <packageinstance name="R0603"/>
-</packageinstances>
-</package3d>
-<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="11">
-<description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R0805"/>
 </packageinstances>
 </package3d>
 <package3d name="R0805W" urn="urn:adsk.eagle:package:23537/2" type="model" library_version="11">
@@ -4768,189 +4951,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2" urn="urn:adsk.eagle:library:372">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="VCC" urn="urn:adsk.eagle:symbol:26997/1" library_version="2">
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="VCC" urn="urn:adsk.eagle:component:27060/1" prefix="SUPPLY" library_version="2">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="686114148922">
-<description>&lt;Wurth Elektronik WR-FPC 1mm Pitch 14 Way Horizontal SMT Female FPC Connector, ZIF Bottom Contact&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="686114148922">
-<description>&lt;b&gt;686114148922-1&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-6.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-5.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="-4.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="-3.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="-2.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="6" x="-1.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="7" x="-0.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="8" x="0.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="9" x="1.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="10" x="2.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="11" x="3.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="12" x="4.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="13" x="5.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="14" x="6.5" y="3.05" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="MP1" x="-8.8" y="0.3" dx="2" dy="1.8" layer="1"/>
-<smd name="MP2" x="8.8" y="0.3" dx="2" dy="1.8" layer="1"/>
-<text x="0" y="0.5" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0.5" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-9.3" y1="2.75" x2="9.3" y2="2.75" width="0.2" layer="51"/>
-<wire x1="9.3" y1="2.75" x2="9.3" y2="-3.05" width="0.2" layer="51"/>
-<wire x1="9.3" y1="-3.05" x2="-9.3" y2="-3.05" width="0.2" layer="51"/>
-<wire x1="-9.3" y1="-3.05" x2="-9.3" y2="2.75" width="0.2" layer="51"/>
-<wire x1="-10.8" y1="5.05" x2="10.8" y2="5.05" width="0.1" layer="51"/>
-<wire x1="10.8" y1="5.05" x2="10.8" y2="-4.05" width="0.1" layer="51"/>
-<wire x1="10.8" y1="-4.05" x2="-10.8" y2="-4.05" width="0.1" layer="51"/>
-<wire x1="-10.8" y1="-4.05" x2="-10.8" y2="5.05" width="0.1" layer="51"/>
-<wire x1="-9.3" y1="-1" x2="-9.3" y2="-3.05" width="0.1" layer="21"/>
-<wire x1="-9.3" y1="-3.05" x2="9.3" y2="-3.05" width="0.1" layer="21"/>
-<wire x1="9.3" y1="-3.05" x2="9.3" y2="-1" width="0.1" layer="21"/>
-<wire x1="-9.3" y1="1.6" x2="-9.3" y2="2.8" width="0.1" layer="21"/>
-<wire x1="-9.2" y1="2.75" x2="-7.2" y2="2.75" width="0.1" layer="21"/>
-<wire x1="-9.3" y1="2.75" x2="-9.2" y2="2.75" width="0.1" layer="21"/>
-<wire x1="7" y1="2.75" x2="9.3" y2="2.75" width="0.1" layer="21"/>
-<wire x1="9.3" y1="2.75" x2="9.3" y2="1.6" width="0.1" layer="21"/>
-<wire x1="-6.6" y1="4" x2="-6.6" y2="4" width="0.1" layer="21"/>
-<wire x1="-6.6" y1="4" x2="-6.5" y2="4" width="0.1" layer="21" curve="180"/>
-<wire x1="-6.5" y1="4" x2="-6.5" y2="4" width="0.1" layer="21"/>
-<wire x1="-6.5" y1="4" x2="-6.6" y2="4" width="0.1" layer="21" curve="180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="686114148922">
-<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-35.56" x2="20.32" y2="2.54" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-35.56" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
-<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="25.4" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="2" x="25.4" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="3" x="25.4" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="4" x="25.4" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="5" x="25.4" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="6" x="25.4" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="7" x="25.4" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="8" x="25.4" y="-17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="9" x="25.4" y="-20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="10" x="25.4" y="-22.86" visible="pin" length="middle" rot="R180"/>
-<pin name="11" x="25.4" y="-25.4" visible="pin" length="middle" rot="R180"/>
-<pin name="12" x="25.4" y="-27.94" visible="pin" length="middle" rot="R180"/>
-<pin name="13" x="25.4" y="-30.48" visible="pin" length="middle" rot="R180"/>
-<pin name="14" x="25.4" y="-33.02" visible="pin" length="middle" rot="R180"/>
-<pin name="MP1" x="0" y="0" visible="off" length="middle"/>
-<pin name="MP2" x="0" y="-2.54" visible="off" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="686114148922" prefix="J" uservalue="yes">
-<description>&lt;b&gt;Wurth Elektronik WR-FPC 1mm Pitch 14 Way Horizontal SMT Female FPC Connector, ZIF Bottom Contact&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="686114148922" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="686114148922">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="14" pad="14"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-<connect gate="G$1" pin="MP1" pad="MP1"/>
-<connect gate="G$1" pin="MP2" pad="MP2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
-<attribute name="DESCRIPTION" value="Wurth Elektronik WR-FPC 1mm Pitch 14 Way Horizontal SMT Female FPC Connector, ZIF Bottom Contact" constant="no"/>
-<attribute name="HEIGHT" value="2.3mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="686114148922" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="710-686114148922" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/686114148922?qs=a9WhcLg8qCz0mPj5zZqo5g%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4961,20 +4961,20 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 </class>
 </classes>
 <parts>
-<part name="Q1" library="qre1113" deviceset="QRE1113GR" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q2" library="qre1113" deviceset="QRE1113GR" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q3" library="qre1113" deviceset="QRE1113GR" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q4" library="qre1113" deviceset="QRE1113GR" device=""/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q5" library="qre1113" deviceset="QRE1113GR" device=""/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q6" library="qre1113" deviceset="QRE1113GR" device=""/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
-<part name="Q7" library="qre1113" deviceset="QRE1113GR" device=""/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
+<part name="Q1" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="Q2" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="Q3" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="Q4" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="Q5" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="Q6" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="Q7" library="qre1113" deviceset="QRE1113" device=""/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="686114148922" deviceset="686114148922" device=""/>
@@ -4987,51 +4987,51 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <instance part="Q1" gate="A" x="-2.54" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-2.8194" y="70.3072" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="R1" gate="G$1" x="-10.16" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-8.6614" y="62.23" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="-13.462" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<instance part="R1" gate="G$1" x="-10.16" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-8.6614" y="52.07" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="-13.462" y="52.07" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="Q2" gate="A" x="20.32" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="20.0406" y="70.3072" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="R3" gate="G$1" x="12.7" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="14.1986" y="62.23" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="9.398" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<instance part="R3" gate="G$1" x="12.7" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="14.1986" y="52.07" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="9.398" y="52.07" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="Q3" gate="A" x="40.64" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="40.3606" y="70.3072" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="R5" gate="G$1" x="33.02" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="34.5186" y="62.23" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="29.718" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<instance part="R5" gate="G$1" x="33.02" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="34.5186" y="52.07" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="29.718" y="52.07" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="Q4" gate="A" x="60.96" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="60.6806" y="70.3072" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="R7" gate="G$1" x="53.34" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="54.8386" y="62.23" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="50.038" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<instance part="R7" gate="G$1" x="53.34" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="54.8386" y="52.07" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="50.038" y="52.07" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="Q5" gate="A" x="81.28" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="81.0006" y="70.3072" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="R9" gate="G$1" x="73.66" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="75.1586" y="62.23" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="70.358" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<instance part="R9" gate="G$1" x="73.66" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="75.1586" y="52.07" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="70.358" y="52.07" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="Q6" gate="A" x="101.6" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="101.3206" y="70.3072" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="R11" gate="G$1" x="93.98" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="95.4786" y="62.23" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="90.678" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<instance part="R11" gate="G$1" x="93.98" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="95.4786" y="52.07" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="90.678" y="52.07" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="Q7" gate="A" x="121.92" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="121.6406" y="70.3072" size="1.9304" layer="95" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="R13" gate="G$1" x="114.3" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="115.7986" y="62.23" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="110.998" y="62.23" size="1.778" layer="96" rot="MR90"/>
+<instance part="R13" gate="G$1" x="114.3" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="115.7986" y="52.07" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="110.998" y="52.07" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="SUPPLY7" gate="G$1" x="139.7" y="78.74" smashed="yes">
 <attribute name="VALUE" x="137.795" y="81.915" size="1.778" layer="96"/>
@@ -5051,7 +5051,7 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <segment>
 <pinref part="Q1" gate="A" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="-10.16" y1="71.12" x2="-10.16" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="73.66" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C0" class="0">
@@ -5144,7 +5144,7 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <segment>
 <pinref part="Q2" gate="A" pin="1"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="71.12" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="73.66" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C1" class="0">
@@ -5163,7 +5163,7 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <segment>
 <pinref part="Q3" gate="A" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="71.12" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="73.66" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C2" class="0">
@@ -5182,7 +5182,7 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <segment>
 <pinref part="Q4" gate="A" pin="1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="71.12" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="73.66" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C3" class="0">
@@ -5213,7 +5213,7 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <segment>
 <pinref part="Q6" gate="A" pin="1"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="71.12" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="73.66" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C5" class="0">
@@ -5232,7 +5232,7 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <segment>
 <pinref part="Q7" gate="A" pin="1"/>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="71.12" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="73.66" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C6" class="0">
@@ -5251,38 +5251,38 @@ Source: &lt;a href="https://www.we-online.com/catalog/datasheet/686114148922.pdf
 <segment>
 <pinref part="Q5" gate="A" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="71.12" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="73.66" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<wire x1="139.7" y1="76.2" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="76.2" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="60.96" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<junction x="93.98" y="60.96"/>
+<junction x="93.98" y="50.8"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<junction x="73.66" y="60.96"/>
+<junction x="73.66" y="50.8"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<junction x="53.34" y="60.96"/>
+<junction x="53.34" y="50.8"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<junction x="33.02" y="60.96"/>
+<junction x="33.02" y="50.8"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<junction x="12.7" y="60.96"/>
-<wire x1="139.7" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
-<junction x="114.3" y="60.96"/>
+<junction x="12.7" y="50.8"/>
+<wire x1="139.7" y1="55.88" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
+<junction x="114.3" y="50.8"/>
 <wire x1="71.12" y1="104.14" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="83.82" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="83.82" x2="-15.24" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="60.96" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-10.16" y="60.96"/>
+<wire x1="-15.24" y1="83.82" x2="-15.24" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="55.88" x2="-10.16" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-10.16" y="50.8"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
