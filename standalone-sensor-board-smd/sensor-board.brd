@@ -71,7 +71,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
-<layer number="200" name="bBitMap" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="200" name="bBmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -703,8 +703,8 @@
 <rectangle x1="5.22" y1="68.16" x2="5.42" y2="68.2" layer="200" rot="R90"/>
 <rectangle x1="5.2" y1="68.58" x2="5.44" y2="68.62" layer="200" rot="R90"/>
 <rectangle x1="5.28" y1="69.54" x2="5.36" y2="69.58" layer="200" rot="R90"/>
-<hole x="6" y="12" drill="4"/>
-<hole x="6" y="82" drill="4"/>
+<hole x="4" y="11" drill="4"/>
+<hole x="4" y="81.5" drill="4"/>
 </plain>
 <libraries>
 <library name="qre1113">
@@ -2203,13 +2203,17 @@ design rules under a new name.</description>
 <signal name="C0">
 <contactref element="Q1" pad="3"/>
 <contactref element="J1" pad="14"/>
-<wire x1="5.515" y1="5.5134" x2="5.515" y2="8.11196875" width="0.1524" layer="16"/>
-<wire x1="5.515" y1="8.11196875" x2="2.9078" y2="10.71916875" width="0.1524" layer="16"/>
 <wire x1="2.44514375" y1="38.61945625" x2="2.44514375" y2="39.065528125" width="0.1524" layer="16"/>
 <wire x1="2.44514375" y1="39.065528125" x2="3.45" y2="40.070384375" width="0.1524" layer="16"/>
 <wire x1="3.45" y1="40.070384375" x2="3.45" y2="40.25" width="0.1524" layer="16"/>
 <wire x1="2.9078" y1="38.1568" x2="2.44514375" y2="38.61945625" width="0.1524" layer="16"/>
-<wire x1="2.9078" y1="10.71916875" x2="2.9078" y2="38.1568" width="0.1524" layer="16"/>
+<wire x1="2.9078" y1="16" x2="2.9078" y2="38.1568" width="0.1524" layer="16"/>
+<wire x1="5.515" y1="8.14196875" x2="7.0922" y2="9.71916875" width="0.1524" layer="16"/>
+<wire x1="7.0922" y1="9.71916875" x2="7.0922" y2="12.28083125" width="0.1524" layer="16"/>
+<wire x1="7.0922" y1="12.28083125" x2="5.28083125" y2="14.0922" width="0.1524" layer="16"/>
+<wire x1="5.28083125" y1="14.0922" x2="4.8156" y2="14.0922" width="0.1524" layer="16"/>
+<wire x1="4.8156" y1="14.0922" x2="2.9078" y2="16" width="0.1524" layer="16"/>
+<wire x1="5.515" y1="5.5134" x2="5.515" y2="8.14196875" width="0.1524" layer="16"/>
 </signal>
 <signal name="GND">
 <polygon width="0.127" layer="1">
@@ -2343,9 +2347,15 @@ design rules under a new name.</description>
 <wire x1="9" y1="53" x2="7.4" y2="51.4" width="0.1524" layer="16"/>
 <wire x1="7.4" y1="51.4" x2="3.6" y2="51.4" width="0.1524" layer="16"/>
 <wire x1="6.4292" y1="58.5708" x2="9" y2="56" width="0.1524" layer="16"/>
-<wire x1="5.515" y1="89.6334" x2="2.9078" y2="87.0262" width="0.1524" layer="16"/>
-<wire x1="2.9078" y1="87.0262" x2="2.9078" y2="60.67298125" width="0.1524" layer="16"/>
+<wire x1="2.9078" y1="60.67298125" x2="2.9078" y2="77" width="0.1524" layer="16"/>
 <wire x1="2.9078" y1="60.67298125" x2="5.00998125" y2="58.5708" width="0.1524" layer="16"/>
+<wire x1="2.9078" y1="77" x2="4.3156" y2="78.4078" width="0.1524" layer="16"/>
+<wire x1="4.3156" y1="78.4078" x2="5.28083125" y2="78.4078" width="0.1524" layer="16"/>
+<wire x1="5.28083125" y1="78.4078" x2="7.0922" y2="80.21916875" width="0.1524" layer="16"/>
+<wire x1="7.0922" y1="80.21916875" x2="7.0922" y2="82.78083125" width="0.1524" layer="16"/>
+<wire x1="7.0922" y1="82.78083125" x2="7" y2="82.87303125" width="0.1524" layer="16"/>
+<wire x1="7" y1="88.1484" x2="5.515" y2="89.6334" width="0.1524" layer="16"/>
+<wire x1="7" y1="82.87303125" x2="7" y2="88.1484" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="Q5" pad="1"/>
