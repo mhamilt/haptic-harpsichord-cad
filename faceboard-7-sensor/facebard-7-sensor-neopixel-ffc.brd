@@ -112,7 +112,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="200" name="bBmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
@@ -138,7 +138,7 @@
 <wire x1="26" y1="0" x2="26" y2="93.5" width="0" layer="20"/>
 <wire x1="26" y1="93.5" x2="0" y2="93.5" width="0" layer="20"/>
 <wire x1="0" y1="93.5" x2="0" y2="0" width="0" layer="20"/>
-<text x="6.08" y="78.72" size="0.32" layer="26" font="vector" rot="MR180">NEMUS Face Board v0.1.1</text>
+<text x="6.08" y="78.72" size="0.32" layer="26" font="vector" rot="MR180">NEMUS Face Board v0.1.2</text>
 <hole x="13" y="5" drill="4"/>
 <hole x="13" y="88.5" drill="4"/>
 <rectangle x1="23.26" y1="84.26" x2="24.54" y2="84.3" layer="200"/>
