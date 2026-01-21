@@ -705,6 +705,7 @@
 <rectangle x1="5.28" y1="68.54" x2="5.36" y2="68.58" layer="200" rot="R90"/>
 <hole x="4.5" y="81.5" drill="4"/>
 <hole x="4.5" y="11" drill="4"/>
+<text x="0.5" y="92.5" size="0.4064" layer="25">NEMUS Sensor Board v0.1.0</text>
 </plain>
 <libraries>
 <library name="qre1113">
