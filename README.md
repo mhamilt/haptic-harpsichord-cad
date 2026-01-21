@@ -68,6 +68,7 @@ for index, point in enumerate([(x * rpitch) + resitor100_oy for x in range(0,16)
     print(f"move R{((index+1)+1)*2} ({resitor10k_ox} {point});")
 
 led_ox = 23.08 # min distance from board edge in x axis
+led_ox = 23.68
 # led_oy = 4.4 # min distance from board edge in y axis
 # led_pitch = 12.0
 led_pitch = 17.73 - 3.71
