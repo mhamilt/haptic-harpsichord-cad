@@ -5751,6 +5751,9 @@ Junction</text>
 <segment>
 <wire x1="17.78" y1="71.12" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="22.86" y1="71.12" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="C1" class="0">
 <segment>
@@ -6139,11 +6142,6 @@ Junction</text>
 <segment>
 <pinref part="LED7" gate="G$1" pin="DI"/>
 <pinref part="LED6" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="GND1" class="0">
-<segment>
-<wire x1="22.86" y1="71.12" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
