@@ -29,28 +29,22 @@ Repository of CAD project files for the [Haptic Harpsichord](https://github.com/
 
 ## Eagle 
 
-### Automating Commands
+### Automating EAGLE Commands
 
-```py
-ox = 1.71     # min distance from board edge
-pitch = 14.02 # jack pitch
-[(x * pitch) + ox for x in range(0,7)]
-[1.71, 15.73, 29.75, 43.77, 57.79, 71.80999999999999, 85.83]
-```
+Below is python code used to generate commands that can be copy and pasted into EAGLE.
 
-Python can be used to automatically generate the placement of all pieces.
+EAGLE has it's [ULP](https://web.mit.edu/xavid/arch/i386_rhel4/help/129.htm), but the intention here is to provide a light weight and easily modifiable system.
+
+#### Faceboard
 
 ```py
 qrepitch = 1.8 # placement is calculated from the #1 pin, pitch is used to offset to the centre
-ox = 1.71     # min distance from board edge
-oy = 1.71     # min distance from board edge in y axis
+ox = 1.705     # min distance from board edge
+oy = 1.705     # min distance from board edge in y axis
 pitch = 14.02 # jack pitch
 max_board_width = (6*pitch) + ox + qrepitch + ox
 
 for index, point in enumerate([(x * pitch) + ox for x in range(0,7)]):
-  print(f"move Q{index+1} ({oy} {point});")
-  # print(f"rotate Q{index+1};")
-for index, point in enumerate([(x * pitch) + ox for x in range(0,16)]):
   print(f"move Q{index+1} ({oy} {point});")
 
 resitor100k_ox = 10.1 # min distance from board edge in y axis
@@ -79,6 +73,25 @@ for index, point in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):
   print(f"move D{(7-index)} ({led_ox} {point});")
   print(f"mirror D{(index+1)};")
 
+```
+
+#### Sensor Board
+
+```py
+ox = 1.705         # mm min distance from board edge
+oy = 1.705         # mm min distance from board edge in y axis
+rotx = 3.55        # mm min x distance but for a 90 rotated sensor
+jack_pitch = 14.02 # mm
+
+led_ox = 23.08 # min distance from board edge in x axis
+led_pitch = 17.73 - 3.71 # mini 3535 neopixels
+
+for i, p in enumerate([(x * jack_pitch) + oy for x in range(0,7)]):
+  print(f"ROTATE =R90 Q{i+1};")
+
+for i, p in enumerate([(x * jack_pitch) + oy for x in range(0,7)]):
+  print(f"move Q{i+1} ({rotx} {p});")
+
 for i, p in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):
   print(f"ROTATE =R90 LED{i+1};")
 
@@ -88,10 +101,45 @@ for index, point in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):
 for index, point in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):  
   print(f"mirror LED{(index+1)};")
 
+```
 
+#### Sensor Board SMD
 
-# Ideal LED placement
-for index, point in enumerate([(x * pitch) + ox for x in range(0,7)]):
-  print(f"move D{index+1} ({23.8} {point+qrepitch/2});")
+```py
+ox = 1.705         # mm min distance from board edge
+oy = 1.705         # mm min distance from board edge in y axis
+rotx = 3.55        # mm min x distance but for a 90 rotated sensor
+jack_pitch = 14.02 # mm
 
+led_ox = 23.08 # min distance from board edge in x axis
+led_pitch = 17.73 - 3.71 # mini 3535 neopixels
+
+for i, p in enumerate([(x * jack_pitch) + oy for x in range(0,7)]):
+  print(f"ROTATE =R90 Q{i+1};")
+
+for i, point in enumerate([(x * jack_pitch) + ox for x in range(0,7)]):
+  print(f"move Q{i+1} ({oy} {p});")
+
+for i, p in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):
+  print(f"ROTATE =R90 LED{i+1};")
+
+for i, p in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):  
+  print(f"move LED{(i+1)} ({led_ox} {point});")
+
+for i, p in enumerate([(x * led_pitch) + led_oy for x in range(0,7)]):  
+  print(f"mirror LED{(i+1)};")
+
+```
+
+## Mount Holes
+
+### Sensor Board
+
+```
+Mount Holes: (4.5 81.5), (4.5 11) 
+```
+### Signal Board
+
+```
+Mount Holes: (12.5 75), (12.5 18) 
 ```
